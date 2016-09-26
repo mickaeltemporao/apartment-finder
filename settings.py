@@ -3,7 +3,7 @@ import os
 ## Price
 
 # The minimum rent you want to pay per month.
-MIN_PRICE = 1500
+MIN_PRICE = 1000
 
 # The maximum rent you want to pay per month.
 MAX_PRICE = 2000
@@ -13,61 +13,21 @@ MAX_PRICE = 2000
 # The Craigslist site you want to search on.
 # For instance, https://sfbay.craigslist.org is SF and the Bay Area.
 # You only need the beginning of the URL.
-CRAIGSLIST_SITE = 'sfbay'
+CRAIGSLIST_SITE = 'toronto'
 
 # What Craigslist subdirectories to search on.
 # For instance, https://sfbay.craigslist.org/eby/ is the East Bay, and https://sfbay.craigslist.org/sfc/ is San Francisco.
 # You only need the last three letters of the URLs.
-AREAS = ["eby", "sfc", "sby", "nby"]
+AREAS = ["tor"]
 
 # A list of neighborhoods and coordinates that you want to look for apartments in.  Any listing that has coordinates
 # attached will be checked to see which area it is in.  If there's a match, it will be annotated with the area
 # name.  If no match, the neighborhood field, which is a string, will be checked to see if it matches
 # anything in NEIGHBORHOODS.
 BOXES = {
-    "adams_point": [
-        [37.80789, -122.25000],
-        [37.81589,	-122.26081],
-    ],
-    "piedmont": [
-        [37.82240, -122.24768],
-        [37.83237, -122.25386],
-    ],
-    "rockridge": [
-        [37.83826, -122.24073],
-        [37.84680, -122.25944],
-    ],
-    "berkeley": [
-        [37.86226, -122.25043],
-        [37.86781, -122.26502],
-    ],
-    "north_berkeley": [
-        [37.86425, -122.26330],
-        [37.87655, -122.28974],
-    ],
-    "pac_heights": [
-        [37.79124, -122.42381],
-        [37.79850, -122.44784],
-    ],
-    "lower_pac_heights": [
-        [37.78554, -122.42878],
-        [37.78873, -122.44544],
-    ],
-    "haight": [
-        [37.77059, -122.42688],
-        [37.77086, -122.45401],
-    ],
-    "sunset": [
-        [37.75451, -122.46422],
-        [37.76258, -122.50825],
-    ],
-    "richmond": [
-        [37.77188, -122.47263],
-        [37.78029, -122.51005],
-    ],
-    "presidio": [
-        [37.77805, -122.43959],
-        [37.78829, -122.47151],
+    "zone_mc": [
+        [-79.443641,43.62803],
+        [-79.371972,43.666614],
     ]
 }
 
