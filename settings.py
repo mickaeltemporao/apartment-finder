@@ -6,7 +6,7 @@ import os
 MIN_PRICE = 1000
 
 # The maximum rent you want to pay per month.
-MAX_PRICE = 2000
+MAX_PRICE = 2100
 
 ## Location preferences
 
@@ -26,8 +26,8 @@ AREAS = ["tor"]
 # anything in NEIGHBORHOODS.
 BOXES = {
     "zone_mc": [
-        [-79.443641,43.62803],
-        [-79.371972,43.666614],
+        [-79.432311,43.642054,
+        [-79.396992,43.658667],
     ]
 }
 
@@ -35,7 +35,7 @@ BOXES = {
 # one of the boxes you defined, it will be checked to see if the neighborhood name it was listed under matches one
 # of these.  This is less accurate than the boxes, because it relies on the owner to set the right neighborhood,
 # but it also catches listings that don't have coordinates (many listings are missing this info).
-NEIGHBORHOODS = ["berkeley north", "berkeley", "rockridge", "adams point", "oakland lake merritt", "cow hollow", "piedmont", "pac hts", "pacific heights", "lower haight", "inner sunset", "outer sunset", "presidio", "palo alto", "richmond / seacliff", "haight ashbury", "alameda", "twin peaks", "noe valley", "bernal heights", "glen park", "sunset", "mission district", "potrero hill", "dogpatch"]
+NEIGHBORHOODS = ["trinity", "bellwoods", "little portugal", "little italy", "fashion disctrict"]
 
 ## Transit preferences
 
@@ -44,13 +44,7 @@ MAX_TRANSIT_DIST = 2 # kilometers
 
 # Transit stations you want to check against.  Every coordinate here will be checked against each listing,
 # and the closest station name will be added to the result and posted into Slack.
-TRANSIT_STATIONS = {
-    "oakland_19th_bart": [37.8118051,-122.2720873],
-    "macarthur_bart": [37.8265657,-122.2686705],
-    "rockridge_bart": [37.841286,-122.2566329],
-    "downtown_berkeley_bart": [37.8629541,-122.276594],
-    "north_berkeley_bart": [37.8713411,-122.2849758]
-}
+TRANSIT_STATIONS = {}
 
 ## Search type preferences
 
