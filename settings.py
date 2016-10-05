@@ -80,7 +80,7 @@ NEIGHBORHOODS = ["berkeley north", "berkeley", "rockridge", "adams point", "oakl
 ## Transit preferences
 
 # The farthest you want to live from a transit stop.
-MAX_TRANSIT_DIST = 4 # kilometers
+MAX_TRANSIT_DIST = 2 # kilometers
 
 # Transit stations you want to check against.  Every coordinate here will be checked against each listing,
 # and the closest station name will be added to the result and posted into Slack.
