@@ -1,1 +1,1 @@
-python3 main_loop.py
+worker: python3 main_loop.py
